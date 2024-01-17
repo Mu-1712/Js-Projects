@@ -1,0 +1,36 @@
+body{
+
+    background-color: azure;
+}
+#container{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+button{
+    background-color: rgb(90, 99, 194);
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(31, 41, 132);
+    color: aliceblue;
+}
+input{
+    font-size: large;
+    width: 150px;
+    text-align: center;
+}
+#diceresult{
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+#imageresult{
+    text-align: center;
+    margin: 20px;
+    width: 500px;
+}

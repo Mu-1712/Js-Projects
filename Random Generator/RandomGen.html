@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Generator</title>
+    <link rel="stylesheet" href="RandomGen.css">
+</head>
+<body>
+    <h1 id="h1">Random Generator</h1>
+    <p id="para">Roll a Dice</p>
+
+    <div id="labels"> 
+        <label id="label1" class="labels"></label>
+        <label id="label2" class="labels"></label>
+        <label id="label3" class="labels"></label>
+    </div>
+   
+    <div id="Dices"> 
+        <button id="Roll1" class="Rollit">D1</button>
+        <button id="Roll2" class="Rollit">D2</button>
+        <button id="Roll3" class="Rollit">D3</button>
+    </div>
+
+    <script>
+
+
+const Roll1 = document.getElementById("Roll1")
+const Roll2 = document.getElementById("Roll2")
+const Roll3 = document.getElementById("Roll3")
+const label = document.getElementById("label")
+const min = 1;
+const max = 6;
+let randomNum;
+
+Roll1.onclick = function(){
+    randomNum = Math.floor(Math.random() * max) + min;
+    label1.textContent = randomNum;
+}
+Roll2.onclick = function(){
+    randomNum = Math.floor(Math.random() * max) + min;
+    label2.textContent = randomNum;
+}
+Roll3.onclick = function(){
+    randomNum = Math.floor(Math.random() * max) + min;
+    label3.textContent = randomNum;
+}
+    </script>
+</body>
+</html>

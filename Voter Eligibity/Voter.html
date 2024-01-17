@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Eligibility</title>
+    <style>
+        #output {
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Voter Eligibility</h1>
+    <label id="mylabel">Enter your Age:</label>
+    <input type="text" id="input"><br><br>
+    <button id="clickme">Submit</button>
+    <h2 id="output"></h2>
+
+    <script>
+        const input = document.getElementById("input")
+        const clickme = document.getElementById("clickme")
+        const output = document.getElementById("output")
+        let Age = 0;
+
+        clickme.onclick = function(){
+            Age = input.value;
+            Age = Number(Age);
+
+            if (isNaN(Age)) {
+                output.textContent = `Please enter a valid number for age.`;
+                output.style.color = "red";
+            } else if (Age >= 18) {
+                output.textContent = `You are eligible to vote`;
+                output.style.color = "green";
+            } else if (Age == 0) {
+                output.textContent = `Age should be greater than Zero`;
+                output.style.color = "red";
+            } else if (Age < 0) {
+                output.textContent = `Please enter a valid number`;
+                output.style.color = "red";
+            } else {
+                output.textContent = `You should be 18 or older to vote`;
+                output.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

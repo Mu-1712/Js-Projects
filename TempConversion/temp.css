@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(193, 204, 204);
+    font-size: large;
+}
+h1{
+    color: rgb(255, 8, 0);
+}
+
+form{
+   text-align: center;
+   background-color: rgb(255, 255, 255);
+   margin: auto;
+   max-width: 400px;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 10px, 10px, 25px black;
+}
+#textbox{
+    width: 50%;
+    text-align: center;
+    font-size: large;
+    border-radius: 10px  solid black;
+    margin-bottom: 15px;
+}
+label{
+    font-family:serif;
+    font-weight: bolder;
+}
+button{
+    background-color: aquamarine;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(23, 122, 89);
+    color: white;
+}
+#result{
+     font-size: large;
+     font-weight: bold;
+}
+#diceresult{
+    margin: 30px;
+}
+#imageresult{
+    width: 200px;
+    margin: 5px;
+}

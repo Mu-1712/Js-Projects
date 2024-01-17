@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Program</title>
+    <link rel="stylesheet" href="Counter.css">
+</head>
+<body>
+    <h1>Counter Program</h1>
+    <label id="countlabel">0</label>
+    <div id="buttonContainer">
+        <button id="CountDec" class="buttons">Dec</button>
+        <button id="CountReset" class="buttons">Reset</button>
+        <button id="CountInc" class="buttons">Inc</button>
+    </div>
+
+
+    <script>
+            const CountDec = document.getElementById("CountDec")
+        const CountReset = document.getElementById("CountReset")
+        const CountInc = document.getElementById("CountInc")
+        const countlabel = document.getElementById("countlabel")
+        
+        let count = 0;
+
+        CountInc.onclick = function(){
+                count++;
+                countlabel.textContent = count;
+        }
+        CountDec.onclick = function(){
+                count--;
+                countlabel.textContent = count;
+        }
+        CountReset.onclick = function(){
+                count = 0;
+                countlabel.textContent = count;
+        }
+
+    </script>
+</body>
+</html>

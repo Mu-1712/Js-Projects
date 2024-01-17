@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather</title>
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <form>
+        <h1>Temperature Conversion</h1>
+        
+        <input type="number" value="0" id="textbox"><br><br>
+
+        <input type="radio" name="unit" id="toFarenhiet" value="toFahrenheit">
+        <label for="toFarenhiet">Celsius to Farenhiet</label><br><br>
+
+        <input type="radio" name="unit" id="toCelsius" value="toCelsius">
+        <label for="toCelsius">Farenhiet to Celsius </label><br><br>
+
+        <button type="button" onclick="Convert()" id="click">Submit</button>
+
+        <p id="result">Select a Unit</p>
+
+    </form>
+
+
+    <script src="temp.js"></script>
+</body>
+</html>

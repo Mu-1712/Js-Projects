@@ -1,0 +1,30 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+#countlabel{
+    display: block;
+    text-align: center;
+    font-size:15rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#buttonContainer{
+    text-align: center;
+}
+.buttons{
+    font-size: 3rem;
+    padding: 10px, 30px;
+    color: white;
+    background-color: hsl(218, 94%, 43%);
+    border-radius: 5px, black;
+    cursor: pointer;
+    transition: background-color 0.25;
+}
+.buttons:hover{
+    background-color: hsl(243, 100%, 50%);
+}
